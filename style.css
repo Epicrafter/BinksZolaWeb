@@ -34,30 +34,6 @@ h1 {
     flex-direction: column;
 }
 
-@media only screen and (max-width: 414px) {
-
-    header {
-        background-image: url(zola-img-small.jpg)
-    }
-
-    h1 {
-        font-size: 3rem;
-    }
-
-}
-
-@media only screen and (max-height: 736px) {
-
-    header {
-        background-image: url(zola-img-small.jpg)
-    }
-
-    h1 {
-        font-size: 3rem;
-    }
-
-}
-
 /* New Albums */
 
 section {
@@ -96,6 +72,33 @@ section {
     text-align: center;
 }
 
+/* Change Background */
+
+@media only screen and (max-width: 1024px) {
+
+    header {
+        background-image: url(zola-img-small.jpg)
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+}
+
+@media only screen and (max-height: 736px) {
+
+    header {
+        background-image: url(zola-img-small.jpg)
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+}
+
+/* New Album Header */
 
 @media only screen and (max-width: 414px) {
 
