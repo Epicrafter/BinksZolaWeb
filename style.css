@@ -8,7 +8,7 @@
 /* Header */
 
 header {
-    background-image: url(zola.jpg);
+    background-image: url(images/zola.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -77,7 +77,7 @@ section {
 @media only screen and (max-width: 1024px) {
 
     header {
-        background-image: url(zola-img-small.jpg)
+        background-image: url(images/zola-img-small.jpg)
     }
 
     h1 {
@@ -89,7 +89,7 @@ section {
 @media only screen and (max-height: 736px) {
 
     header {
-        background-image: url(zola-img-small.jpg)
+        background-image: url(images/zola-img-small.jpg)
     }
 
     h1 {
