@@ -8,7 +8,7 @@
 /* Header */
 
 header {
-    background-image: url(images/zola.jpg);
+    background-image: url(zola.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -51,33 +51,34 @@ section {
     flex-direction: column;
 }
 
-.new h1 {
-    color: black;
-    font-size: 2rem;
-    text-align: center;
-}
-
-.new p {
-    padding-top: 3%;
-    text-align: center;
-    font-size: 25px;   
-}
-
 .new p span {
     color: #ff7675;
 }
 
-.new h3 {
-    color: #ff7675;
+.new p {
+    font-size: 15px;
     text-align: center;
+    padding-top: 3%;
+}
+
+.new h1 {
+    font-size: 1rem;
+    text-align: center;
+    color: black;
+}
+
+.new h3 {
+    font-size: 12px;
+    text-align: center;
+    color: #ff7675;
 }
 
 /* Change Background */
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1052px) {
 
     header {
-        background-image: url(images/zola-img-small.jpg)
+        background-image: url(zola-img-small.jpg)
     }
 
     h1 {
@@ -86,10 +87,10 @@ section {
 
 }
 
-@media only screen and (max-height: 736px) {
+@media only screen and (max-height: 659px) {
 
     header {
-        background-image: url(images/zola-img-small.jpg)
+        background-image: url(zola-img-small.jpg)
     }
 
     h1 {
@@ -98,36 +99,3 @@ section {
 
 }
 
-/* New Album Header */
-
-@media only screen and (max-width: 414px) {
-
-    .new p {
-        font-size: 15px;
-    }
-
-    .new h1 {
-        font-size: 1rem;
-    }
-
-    .new h3 {
-        font-size: 12px;
-    }
-
-}
-
-@media only screen and (max-height: 736px) {
-
-    .new p {
-        font-size: 15px;
-    }
-
-    .new h1 {
-        font-size: 1rem;
-    }
-
-    .new h3 {
-        font-size: 12px;
-    }
-
-}
