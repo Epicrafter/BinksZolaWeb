@@ -36,7 +36,7 @@ h1 {
 
 /* New Albums */
 
-section {
+section .new {
     height: 100vh;
     width: 100%;
     display: flex;
@@ -56,26 +56,96 @@ section {
 }
 
 .new p {
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     padding-top: 3%;
 }
 
 .new h1 {
-    font-size: 1rem;
+    font-size: 2rem;
     text-align: center;
     color: black;
 }
 
 .new h3 {
-    font-size: 12px;
+    font-size: 15px;
     text-align: center;
     color: #ff7675;
 }
 
-/* Change Background */
+/* Footer */
+
+section .footer {
+    display: flex;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+section .footer p {
+    color: black;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+
+.footer-text {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.num1:hover {
+    color: #ff7675;
+}
+
+.num2:hover {
+    color: #ff7675; 
+}
+
+.footer-text .num2 {
+    padding-left: 6%;
+}
+
+/* Floating Button */
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#06C;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.my-float{
+	font-size:24px;
+	margin-top:18px;
+}
+
+.float i:hover {
+    color: #bdc3c7;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+/* Albums */
+
+
+
+/* Media */
 
 @media only screen and (max-width: 1052px) {
+
+    /* Header*/
 
     header {
         background-image: url(images/zola-img-small.jpg)
@@ -84,17 +154,127 @@ section {
     h1 {
         font-size: 3rem;
     }
+
+    /* New Album */
+
+    .new p {
+        font-size: 15px;
+        text-align: center;
+        padding-top: 3%;
+    }
+    
+    .new h1 {
+        font-size: 1rem;
+        text-align: center;
+        color: black;
+    }
+    
+    .new h3 {
+        font-size: 12px;
+        text-align: center;
+        color: #ff7675;
+    }
+
+    /* About Zola*/
+
+    .float {
+        display: none;
+    }
+
+    .about {
+        height: 100vh;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .text p {
+        font-family: 'Archivo Narrow', sans-serif;
+        text-align: center;
+        padding: 20% 5%;
+    }
+
 
 }
 
 @media only screen and (max-height: 659px) {
 
+    /* Header*/
+
     header {
         background-image: url(images/zola-img-small.jpg)
     }
 
     h1 {
         font-size: 3rem;
+    }
+
+    /* New Album */
+
+    .new p {
+        font-size: 15px;
+        text-align: center;
+        padding-top: 3%;
+    }
+    
+    .new h1 {
+        font-size: 1rem;
+        text-align: center;
+        color: black;
+    }
+    
+    .new h3 {
+        font-size: 12px;
+        text-align: center;
+        color: #ff7675;
+    }
+
+    /* About Zola*/
+
+    .float {
+        display: none;
+    }
+
+    .about {
+        height: 100vh;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .text p {
+        font-family: 'Archivo Narrow', sans-serif;
+        text-align: center;
+        padding: 20% 5%;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+    /* About Zola */
+
+    .about {
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .text {
+        width: 50%;
+        float: right;
+        padding-left: 10%;
+    }
+
+    .text p {
+        font-family: 'Archivo Narrow', sans-serif;
+    }
+
+    .image {
+        float: left;
     }
 
 }
